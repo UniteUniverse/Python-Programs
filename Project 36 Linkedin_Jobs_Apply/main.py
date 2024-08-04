@@ -10,9 +10,9 @@ sign=driver.find_element(By.XPATH, value="/html/body/div[1]/header/nav/div/a[2]"
 sign.click()
 time.sleep(3)
 email=driver.find_element(By.XPATH, value='//*[@id="username"]')
-email.send_keys("t9940472@gmail.com")
+email.send_keys("")#Enter Your Email
 password=driver.find_element(By.XPATH, value='//*[@id="password"]')
-password.send_keys("Suraj123456")
+password.send_keys("")#Enter Your Password
 button=driver.find_element(By.XPATH, value='//*[@id="organic-div"]/form/div[3]/button')
 button.click()
 
