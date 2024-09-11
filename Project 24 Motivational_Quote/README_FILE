@@ -1,0 +1,42 @@
+Motivational Quote 
+This project sends a motivational quote via email every Monday. It reads quotes from a text file and uses the smtplib library to send an email through Gmail’s SMTP server.
+
+Features
+Sends a motivational quote every Monday.
+Reads quotes from a text file.
+Uses Gmail’s SMTP server to send emails.
+Prerequisites
+Python 3.x
+Gmail account with “Less secure app access” enabled.
+Installation
+Clone the repository:
+git clone https://github.com/UniteUniverse/Python-Programs.git
+cd Python-Programs/Project\ 24\ Motivational_Quote
+
+Install the required libraries:
+pip install -r requirements.txt
+
+Usage
+Update the my_email and password variables in the script with your Gmail credentials.
+Ensure the quotes.txt file is in the same directory as the script.
+Run the script:
+python motivational_quote.py
+
+Code Explanation
+Importing Libraries: The script imports necessary libraries such as datetime, random, and smtplib.
+Reading Quotes: It reads quotes from the quotes.txt file.
+Sending Email: If the current day is Monday, it sends an email with a randomly chosen quote.
+File Structure
+Project 24 Motivational_Quote/
+│
+├── motivational_quote.py
+├── quotes.txt
+└── README.md
+
+Author
+This project was created by Pratyush Kumar Jha.
+
+Contributing
+Feel free to fork this repository and submit pull requests. For major changes, please open an issue first to discuss what you would like to change.
+
+Feel free to adjust any details as needed!
