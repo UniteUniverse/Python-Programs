@@ -1,8 +1,8 @@
 import datetime as dt
 from random import*
 import smtplib
-my_email="t9940472@gmail.com"
-password="vbqj xpse uvtk ncmm"
+my_email="" #Use your own email
+password="" #Create your own
 day=dt.datetime.now().weekday()
 
 with open(file="Motivational Quote Project 24\quotes.txt") as quote:
