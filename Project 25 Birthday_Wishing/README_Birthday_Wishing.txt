@@ -1,78 +1,78 @@
+# Birthday Wishing Project
 
-# Birthday Wishing
-
-Welcome to the Birthday Wishing project! This Python program automatically sends birthday wishes to your friends and family using a graphical user interface (GUI) created with the `tkinter` module and email functionality through the `smtplib` module.
-
-## Author
-
-This project was created by [Pratyush Kumar Jha](https://www.linkedin.com/in/pratyush-kumar-jha-b37a57235/).
+This Python project automates the process of sending birthday wishes via email. It reads birthday data from a CSV file, checks if today matches any birthdays, and sends a personalized email to the birthday person using pre-defined letter templates.
 
 ## Features
 
-- Automatically sends birthday wishes via email.
-- Simple and interactive GUI created with the `tkinter` module.
-- Stores and retrieves birthday data from a CSV file.
+- Reads birthday data from a CSV file.
+- Checks for birthdays matching the current date.
+- Sends personalized birthday emails using SMTP.
+- Uses random letter templates for variety.
+
+## Requirements
+
+- Python 3.x
+- pandas
+- smtplib
 
 ## Installation
 
-To run this program, you'll need to have Python installed on your machine. You can download Python from the official website: [python.org](https://www.python.org/).
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/UniteUniverse/Python-Programs.git
+    cd Project\ 25\ Birthday_Wishing
+    ```
 
-You will also need the `pandas` and `smtplib` modules.
+2. Install the required packages:
+    ```bash
+    pip install pandas
+    ```
 
-1. Clone this repository to your local machine:
-
-```sh
-git clone https://github.com/UniteUniverse/Python-Programs.git
-```
-
-2. Navigate to the project directory:
-
-```sh
-cd Python-Programs/Project\ 25\ Birthday_Wishing
-```
-
-3. Install the required modules if you don't have them already:
-
-```sh
-pip install pandas
-```
+3. Set up your email credentials in the script:
+    ```python
+    my_email = "your_email@example.com"
+    password = "your_password"
+    ```
 
 ## Usage
 
-To start the Birthday Wishing program, run the `Project_25_Birthday_Wishing.py` script:
+1. Prepare your `birthdays.csv` file with the following columns:
+    - `name`
+    - `email`
+    - `year`
+    - `month`
+    - `day`
 
-```sh
-python Project_25_Birthday_Wishing.py
-```
+2. Create letter templates in the `letter_templates` directory. Name them as `letter_1.txt`, `letter_2.txt`, etc. Use `[NAME]` as a placeholder for the recipient's name.
 
-The program will open a window where you can add new birthdays and send birthday wishes automatically.
+3. Run the script:
+    ```bash
+    python birthday_wisher.py
+    ```
 
 ## Example
 
-Here's an example of what the output might look like:
-
-```sh
-A window opens where you can enter new birthdays and send birthday wishes via email.
+Here's an example of how your `birthdays.csv` might look:
+```csv
+name,email,year,month,day
+John Doe,johndoe@example.com,1990,9,11
+Jane Smith,janesmith@example.com,1985,9,11
 ```
 
-## How the Code is Made
+And an example letter template (`letter_1.txt`):
+```
+Dear [NAME],
 
-The Birthday Wishing code is made using Python's `tkinter` module for the GUI, `pandas` for managing the birthday data, and `smtplib` for sending emails. Here's a brief overview of how the code works:
+Wishing you a very Happy Birthday! May your day be filled with joy and happiness.
 
-1. **Importing Modules**: The `tkinter`, `pandas`, and `smtplib` modules are imported to create the GUI, manage the birthday data, and send emails.
+Best regards,
+Your Friend
+```
 
-2. **Loading Birthday Data**: The birthday data is loaded from a CSV file into a pandas DataFrame.
+## Author
 
-3. **Setting Up the GUI**: The main window is set up with labels, entry fields, and buttons for adding birthdays and sending birthday wishes.
-
-4. **Sending Birthday Wishes**: A function is defined to send birthday wishes via email using the `smtplib` module. The function retrieves the email addresses and birthday messages from the DataFrame.
-
-5. **Handling User Input**: The user can enter new birthdays, and the program updates the CSV file accordingly. The user can also trigger the function to send birthday wishes.
+Pratyush Kumar Jha
 
 ## Contributing
 
-If you'd like to contribute to this project, feel free to fork the repository and submit a pull request. All contributions are welcome!
-
-## Contact
-
-For any questions or feedback, you can reach out to the author, Pratyush Kumar Jha, through his [LinkedIn profile](https://www.linkedin.com/in/pratyush-kumar-jha-b37a57235/).
+Feel free to fork this repository and submit pull requests. For major changes, please open an issue first to discuss what you would like to change.
