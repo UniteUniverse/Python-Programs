@@ -1,96 +1,42 @@
+Stock Market Price and News Notifier
+This Python script sends an SMS notification if there is a significant fluctuation in the stock price of Tesla Inc. (TSLA) and provides the latest news headline and brief related to the company.
 
-# Stock Market Price and News Project
+How It Works
+The script performs the following tasks:
 
-Welcome to the Stock Market Price and News Project repository. This project, authored by Pratyush Kumar Jha, provides a comprehensive tool to fetch and analyze stock market prices and related news. It aims to help users stay informed about stock market trends and make data-driven decisions.
+Fetches the daily stock price data for Tesla Inc. (TSLA) using the Alpha Vantage API.
+Calculates the percentage fluctuation in the stock price.
+Fetches the latest news related to Tesla Inc. using the News API.
+Sends an SMS notification via Twilio if the stock price fluctuation is greater than or equal to 5%.
+Prerequisites
+Python 3.x
+requests library
+twilio library
+You can install the required libraries using:
 
-## Table of Contents
+pip install requests twilio
 
-- [Introduction](#introduction)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [How the Code is Made](#how-the-code-is-made)
-- [Contributing](#contributing)
-- [Acknowledgements](#acknowledgements)
-
-## Introduction
-
-The Stock Market Price and News Project is designed to collect and display stock prices along with relevant news articles. This tool integrates financial data and news to provide users with a holistic view of market conditions.
-
-## Features
-
-- Fetch real-time stock prices
-- Retrieve recent news articles related to specific stocks
-- Analyze stock market trends
-- User-friendly interface for easy navigation and data interpretation
-
-## Installation
-
-To get started with this project, follow the steps below:
-
-1. Clone the repository:
-
-```bash
+Usage
+Clone the repository:
 git clone https://github.com/UniteUniverse/Python-Programs.git
-```
+cd Python-Programs/Project%2030%20Stock_Market_Price_News
 
-2. Navigate to the project directory:
+Update the script with your Twilio account SID, auth token, API keys, and phone numbers:
+Python
 
-```bash
-cd Python-Programs/Project\ 30\ Stock_Market_Price_News
-```
+account_sid = "your_account_sid"
+auth_token = "your_auth_token"
+api_key_stock = "your_api_key_stock"
+api_key_news = "your_api_key_news"
+AI-generated code. Review and use carefully. More info on FAQ.
+Run the script:
+python stock_market_price_news_notifier.py
 
-3. Install the required dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-## Usage
-
-To use the Stock Market Price and News tool, run the main script:
-
-```bash
-python main.py
-```
-
-Follow the on-screen instructions to enter the stock ticker and retrieve the data.
-
-## How the Code is Made
-
-The project is structured as follows:
-
-- **Data Collection**: The tool uses APIs to fetch real-time stock prices and news articles. The APIs used include:
-  - [Alpha Vantage](https://www.alphavantage.co/) for stock prices
-  - [NewsAPI](https://newsapi.org/) for news articles
-
-- **Data Processing**: The collected data is processed and analyzed to extract meaningful insights. Python libraries such as Pandas and Numpy are utilized for data manipulation.
-
-- **User Interface**: A simple command-line interface (CLI) is implemented to interact with the user. The interface prompts the user for input and displays the results in a readable format.
-
-- **Error Handling**: The code includes error handling mechanisms to manage issues such as network errors, API limits, and invalid inputs.
-
-## Contributing
-
-We welcome contributions to enhance the functionality and features of this project. If you have suggestions or improvements, feel free to open an issue or submit a pull request.
-
-### Steps to Contribute
-
-1. Fork the repository
-2. Create a new branch for your feature or bugfix
-3. Make your changes
-4. Commit your changes with a descriptive message
-5. Push your changes to your fork
-6. Submit a pull request to the main repository
-
-## Acknowledgements
-
-Special thanks to the contributors and the community for their support and valuable feedback. This project leverages several open-source libraries and APIs, and we appreciate their developers' efforts.
-
----
-
-For any questions or further information, please contact Pratyush Kumar Jha.
-
----
-
-**Note**: This project does not include a license section as per the author's request.
+Script Details
+STOCK: The stock symbol for Tesla Inc. (TSLA).
+parameters_stock: Contains the function, symbol, and API key for fetching stock data.
+parameters_news: Contains the query, date, sort order, and API key for fetching news data.
+percentage_of_fluctuation: Calculates the percentage change in stock price.
+Twilio SMS: Sends an SMS if the stock price fluctuation is greater than or equal to 5%.
+Author
+Pratyush Kumar Jha
