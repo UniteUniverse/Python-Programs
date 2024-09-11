@@ -2,8 +2,8 @@ from pandas import *
 import datetime as dt
 from random import*
 import smtplib
-my_email="t9940472@gmail.com"
-password="vbqj xpse uvtk ncmm"
+my_email="" #Use your own email
+password="" #Get your own
 data=read_csv(r"Project 25 Birthday Wishing\birthdays.csv")
 current_day=dt.datetime.now().day
 current_month=dt.datetime.now().month
