@@ -6,7 +6,7 @@ STOCK = "TSLA"
 COMPANY_NAME = "Tesla Inc"
 account_sid=""#Enter your own from twilio site
 auth_token=""#Enter your own from twilio site
-api_key_twilio=""#Enter your own from twilio site
+
 api_key_stock=""#Enter your own from stock api site alphavantage
 api_key_news=""#Enter your own from newsapi.org
 parameters_stock={
