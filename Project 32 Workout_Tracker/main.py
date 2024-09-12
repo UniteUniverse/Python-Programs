@@ -2,8 +2,8 @@ import requests
 import datetime as dt
 from requests.auth import HTTPBasicAuth
 today_date=dt.datetime.now()
-APP_ID="542e7a0d"
-API_KEY="6389deb4a087b8a69f52bfef169c0a39"
+APP_ID=""#Use Your Own
+API_KEY=""Use Your Own
 headers={
     "Content-Type": 'application/json',
     "x-app-id":APP_ID,
