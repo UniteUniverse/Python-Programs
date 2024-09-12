@@ -24,7 +24,7 @@ workouts={"workout":{
     "duration":response["exercises"][0]["duration_min"],
     "calories":response["exercises"][0]["nf_calories"],
 }}
-basic = HTTPBasicAuth('jha', 'dfjkgbjuwejbdb13djqd')
+basic = HTTPBasicAuth('#Username', '#Password') #Add your own from Sheety
 response_sheet=requests.post(url="https://api.sheety.co/bcd84812db56f5df7e75f8b9dfce4e98/myWorkouts/workouts",json=workouts,auth=basic)
 response_sheet.raise_for_status
 print(response_sheet.text)
