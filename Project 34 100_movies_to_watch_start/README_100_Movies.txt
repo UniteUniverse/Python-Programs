@@ -1,91 +1,32 @@
+100 Movies to Watch
+This Python script scrapes a list of the top 100 movies from a web page and saves them to a text file. It uses the BeautifulSoup library to parse the HTML content and extract the movie titles.
 
-# 100 Movies to Watch Project
+How It Works
+The script performs the following tasks:
 
-Welcome to the 100 Movies to Watch Project repository. This project, authored by Pratyush Kumar Jha, provides a curated list of 100 must-watch movies along with details about each film. It aims to help movie enthusiasts discover and keep track of iconic films across various genres and eras.
+Fetches the web page containing the list of top 100 movies using the requests library.
+Parses the HTML content of the web page using BeautifulSoup.
+Extracts the movie titles from the HTML elements.
+Writes the movie titles to a text file in reverse order.
+Prerequisites
+Python 3.x
+requests library
+beautifulsoup4 library
+You can install the required libraries using:
 
-## Table of Contents
+pip install requests beautifulsoup4
 
-- [Introduction](#introduction)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [How the Code is Made](#how-the-code-is-made)
-- [Contributing](#contributing)
-- [Acknowledgements](#acknowledgements)
-
-## Introduction
-
-The 100 Movies to Watch Project is a comprehensive tool that allows users to explore and track their movie-watching journey. By providing detailed information about each movie, users can delve into the world of cinema and enjoy some of the best films ever made.
-
-## Features
-
-- Curated list of 100 must-watch movies
-- Detailed information about each movie (e.g., genre, director, release year)
-- User-friendly interface for browsing and tracking movies
-- Ability to mark movies as watched or unwatched
-
-## Installation
-
-To get started with this project, follow the steps below:
-
-1. Clone the repository:
-
-```bash
+Usage
+Clone the repository:
 git clone https://github.com/UniteUniverse/Python-Programs.git
-```
+cd Python-Programs/Project%2034%20100_movies_to_watch_start
 
-2. Navigate to the project directory:
+Run the script:
+python movies_scraper.py
 
-```bash
-cd Python-Programs/Project\ 34\ 100_movies_to_watch_start
-```
-
-3. Install the required dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-## Usage
-
-To use the 100 Movies to Watch tool, run the main script:
-
-```bash
-python main.py
-```
-
-Follow the on-screen instructions to browse the list of movies and track your progress.
-
-## How the Code is Made
-
-The project is structured as follows:
-
-- **Data Collection**: The tool includes a predefined list of 100 movies, with details about each film stored in a local database or CSV file.
-- **Data Processing**: The tool processes the movie data to generate an interactive list. Python libraries such as Pandas are used for data manipulation.
-- **User Interface**: A simple command-line interface (CLI) is implemented to interact with the user. The interface allows users to browse movies, view details, and mark movies as watched or unwatched.
-- **Error Handling**: The code includes error handling mechanisms to manage issues such as invalid inputs and database errors.
-
-## Contributing
-
-We welcome contributions to enhance the functionality and features of this project. If you have suggestions or improvements, feel free to open an issue or submit a pull request.
-
-### Steps to Contribute
-
-1. Fork the repository
-2. Create a new branch for your feature or bugfix
-3. Make your changes
-4. Commit your changes with a descriptive message
-5. Push your changes to your fork
-6. Submit a pull request to the main repository
-
-## Acknowledgements
-
-Special thanks to the contributors and the community for their support and valuable feedback. This project leverages several open-source libraries, and we appreciate their developers' efforts.
-
----
-
-For any questions or further information, please contact Pratyush Kumar Jha.
-
----
-
-**Note**: This project does not include a license section as per the author's request.
+Script Details
+URL: The URL of the web page containing the list of top 100 movies.
+BeautifulSoup: Used to parse the HTML content and extract movie titles.
+Reverse Order: The movie titles are saved in reverse order to the text file.
+Author
+Pratyush Kumar Jha
