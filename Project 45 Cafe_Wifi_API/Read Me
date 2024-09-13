@@ -1,0 +1,40 @@
+Cafe Wifi API
+This project is a web application that provides an API for users to find cafes with wifi. It is built using Flask and SQLite, and it allows users to add, view, and search for cafes based on their wifi availability.
+
+Features
+Add new cafes with details such as name, location, and wifi strength.
+View a list of all cafes with their wifi details.
+Search for cafes based on wifi strength.
+Update and delete cafe entries.
+Technologies Used
+Python: The core programming language used for the backend.
+Flask: A lightweight WSGI web application framework used to build the web app.
+SQLite: A C library that provides a lightweight disk-based database.
+HTML/CSS: For structuring and styling the web pages.
+Bootstrap: For responsive design and styling.
+Jinja2: For templating in Flask.
+Installation
+Clone the repository:
+git clone https://github.com/UniteUniverse/Python-Programs.git
+cd Python-Programs/Project\ 45\ Cafe_Wifi_API
+
+Create a virtual environment and activate it:
+python -m venv venv
+source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+
+Install the required packages:
+pip install -r requirements.txt
+
+Run the application:
+flask run
+
+Usage
+Open your web browser and go to http://127.0.0.1:5000/.
+Use the interface to add new cafes, view the list of cafes, and search for cafes based on wifi strength.
+Project Structure
+app.py: The main Flask application file.
+templates/: Contains the HTML templates.
+static/: Contains static files like CSS and images.
+cafe.db: The SQLite database file.
+Author
+Pratyush Kumar Jha
