@@ -1,0 +1,44 @@
+Flask Authentication
+This project is a web application that implements user authentication using Flask. It allows users to register, log in, and log out securely. The application uses Flask-Login for session management and SQLite for storing user data.
+
+Features
+User registration with email and password.
+Secure login and logout functionality.
+Password hashing for security.
+Session management using Flask-Login.
+User profile page.
+Technologies Used
+Python: The core programming language used for the backend.
+Flask: A lightweight WSGI web application framework used to build the web app.
+SQLite: A C library that provides a lightweight disk-based database.
+HTML/CSS: For structuring and styling the web pages.
+Bootstrap: For responsive design and styling.
+Jinja2: For templating in Flask.
+Flask-Login: For managing user sessions.
+Installation
+Clone the repository:
+git clone https://github.com/UniteUniverse/Python-Programs.git
+cd Python-Programs/Project\ 47\ Flask_Authentication
+
+Create a virtual environment and activate it:
+python -m venv venv
+source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+
+Install the required packages:
+pip install -r requirements.txt
+
+Run the application:
+flask run
+
+Usage
+Open your web browser and go to http://127.0.0.1:5000/.
+Register a new user account.
+Log in with your credentials.
+Access the user profile page.
+Project Structure
+app.py: The main Flask application file.
+templates/: Contains the HTML templates.
+static/: Contains static files like CSS and images.
+users.db: The SQLite database file.
+Author
+Pratyush Kumar Jha
