@@ -1,0 +1,33 @@
+Python.org Upcoming Events Scraper
+This Python script scrapes the upcoming events from the Python.org website and stores them in a dictionary. It uses the Selenium library to automate the web browser and extract the event details.
+
+How It Works
+The script performs the following tasks:
+
+Opens the Python.org website using the Selenium WebDriver.
+Extracts the event names and dates from the upcoming events section.
+Stores the event details in a dictionary with the event date and name.
+Prints the dictionary containing the event details.
+Prerequisites
+Python 3.x
+selenium library
+Chrome WebDriver
+You can install the required library using:
+
+pip install selenium
+
+Usage
+Clone the repository:
+git clone https://github.com/UniteUniverse/Python-Programs.git
+cd Python-Programs/Project%2058%20Python.org_Upcoming_Events_Scraper
+
+Download and install Chrome WebDriver from here and ensure it’s in your PATH.
+Run the script:
+python python_org_events_scraper.py
+
+Script Details
+chrome_options: Configures the Chrome WebDriver to keep the browser open after the script completes.
+events_list and events_date_list: Lists to store the event names and dates.
+dictionary: Stores the event details with the event date and name.
+Author
+Pratyush Kumar Jha
