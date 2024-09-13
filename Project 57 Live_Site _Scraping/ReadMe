@@ -1,0 +1,32 @@
+Live Site Scraping
+This Python script scrapes the latest news articles from Hacker News and identifies the article with the highest score. It uses the BeautifulSoup library to parse the HTML content and extract the necessary information.
+
+How It Works
+The script performs the following tasks:
+
+Fetches the Hacker News homepage using the requests library.
+Parses the HTML content of the page using BeautifulSoup.
+Extracts the titles, links, and scores of the news articles.
+Identifies the article with the highest score and prints its title, link, and score.
+Prerequisites
+Python 3.x
+requests library
+beautifulsoup4 library
+You can install the required libraries using:
+
+pip install requests beautifulsoup4
+
+Usage
+Clone the repository:
+git clone https://github.com/UniteUniverse/Python-Programs.git
+cd Python-Programs/Project%2057%20Live_Site%20_Scraping
+
+Run the script:
+python live_site_scraping.py
+
+Script Details
+URL: The URL of the Hacker News homepage.
+BeautifulSoup: Used to parse the HTML content and extract article titles, links, and scores.
+Highest Score: The script identifies and prints the article with the highest score.
+Author
+Pratyush Kumar Jha
