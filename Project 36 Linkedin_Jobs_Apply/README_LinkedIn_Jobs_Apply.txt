@@ -1,91 +1,44 @@
+LinkedIn Job Application Automation
+This project automates the process of applying for jobs on LinkedIn using Selenium. It navigates to the LinkedIn job search page, logs in with your credentials, and applies for a specified job.
 
-# LinkedIn Jobs Apply Project
+Table of Contents
+Introduction
+Prerequisites
+Installation
+Usage
+Author
+Introduction
+This script automates the job application process on LinkedIn. It logs into your LinkedIn account, navigates to a job listing, and fills out the application form. This can save you time and effort in your job search.
 
-Welcome to the LinkedIn Jobs Apply Project repository. This project, authored by Pratyush Kumar Jha, provides a tool to automate the job application process on LinkedIn. It is designed to help job seekers apply to multiple job listings efficiently.
+Prerequisites
+Before you begin, ensure you have met the following requirements:
 
-## Table of Contents
+Python installed on your system.
+Selenium library installed. You can install it using pip:
+pip install selenium
 
-- [Introduction](#introduction)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [How the Code is Made](#how-the-code-is-made)
-- [Contributing](#contributing)
-- [Acknowledgements](#acknowledgements)
-
-## Introduction
-
-The LinkedIn Jobs Apply Project is a powerful tool that allows users to automate the job application process on LinkedIn. By leveraging automation, users can apply to multiple job listings with minimal effort, increasing their chances of landing a job.
-
-## Features
-
-- Automate job applications on LinkedIn
-- Customize application criteria (e.g., job title, location)
-- User-friendly interface for managing job applications
-- Track application status
-
-## Installation
-
-To get started with this project, follow the steps below:
-
-1. Clone the repository:
-
-```bash
+ChromeDriver installed and the path to the executable set correctly in the script.
+A LinkedIn account with your email and password.
+Installation
+Clone this repository to your local machine:
 git clone https://github.com/UniteUniverse/Python-Programs.git
-```
 
-2. Navigate to the project directory:
+Navigate to the project directory:
+cd Python-Programs/Project%2036%20Linkedin_Jobs_Apply
 
-```bash
-cd Python-Programs/Project\ 36\ Linkedin_Jobs_Apply
-```
+Install the required libraries:
+pip install selenium
 
-3. Install the required dependencies:
+Usage
+Open the script file and update the following variables with your LinkedIn credentials:
+Python
 
-```bash
-pip install -r requirements.txt
-```
+email.send_keys("your_email")  # Enter Your Email
+password.send_keys("your_password")  # Enter Your Password
+AI-generated code. Review and use carefully. More info on FAQ.
+Run the script:
+python linkedin_job_apply.py
 
-## Usage
-
-To use the LinkedIn Jobs Apply tool, run the main script:
-
-```bash
-python main.py
-```
-
-Follow the on-screen instructions to set up your job search criteria and start applying to jobs on LinkedIn.
-
-## How the Code is Made
-
-The project is structured as follows:
-
-- **Data Collection**: The tool collects job listings from LinkedIn based on the user's specified criteria.
-- **Automation**: The tool uses automation libraries such as Selenium to interact with the LinkedIn website and apply to job listings.
-- **User Interface**: A simple command-line interface (CLI) is implemented to interact with the user. The interface allows users to set job search criteria and track application status.
-- **Error Handling**: The code includes error handling mechanisms to manage issues such as network errors, invalid inputs, and automation failures.
-
-## Contributing
-
-We welcome contributions to enhance the functionality and features of this project. If you have suggestions or improvements, feel free to open an issue or submit a pull request.
-
-### Steps to Contribute
-
-1. Fork the repository
-2. Create a new branch for your feature or bugfix
-3. Make your changes
-4. Commit your changes with a descriptive message
-5. Push your changes to your fork
-6. Submit a pull request to the main repository
-
-## Acknowledgements
-
-Special thanks to the contributors and the community for their support and valuable feedback. This project leverages several open-source libraries, and we appreciate their developers' efforts.
-
----
-
-For any questions or further information, please contact Pratyush Kumar Jha.
-
----
-
-**Note**: This project does not include a license section as per the author's request.
+The script will open a Chrome browser, navigate to the LinkedIn job search page, log in to your account, and apply for the job.
+Author
+Pratyush Kumar Jha
